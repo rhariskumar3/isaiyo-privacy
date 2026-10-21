@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Your Data — Isaiyo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f8f6f1; color: #1c1f1e; line-height: 1.7; }
+    header { background: linear-gradient(135deg, #1c6b5f 0%, #0f4a41 100%); color: #fff; padding: 48px 24px 40px; text-align: center; }
+    header .logo { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { margin-top: 8px; font-size: 0.95rem; opacity: 0.85; }
+    main { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 8px; }
+    .subtitle { color: #5e6260; margin-bottom: 24px; }
+    .highlight-box { background: #e6f3ef; border-left: 4px solid #1c6b5f; border-radius: 0 8px 8px 0; padding: 14px 18px; margin: 16px 0 32px; font-size: 0.9rem; color: #0f4a41; font-weight: 500; }
+    section { background: #fff; border: 1px solid #e3e0d8; border-radius: 12px; padding: 28px 32px; margin-bottom: 20px; }
+    section h2 { font-size: 1.1rem; font-weight: 700; color: #1c6b5f; margin-bottom: 14px; }
+    .step { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid #f1efe9; }
+    .step:last-child { border-bottom: none; }
+    .step-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #1c6b5f; color: #fff; font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; }
+    .step-text strong { display: block; font-size: 0.93rem; }
+    .step-text span { font-size: 0.88rem; color: #5e6260; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-top: 8px; }
+    th { text-align: left; color: #1c6b5f; padding: 8px 6px; border-bottom: 2px solid #e3e0d8; }
+    td { padding: 8px 6px; border-bottom: 1px solid #f1efe9; color: #3c4240; vertical-align: top; }
+    section p { font-size: 0.93rem; color: #3c4240; margin-bottom: 10px; }
+    section p:last-child { margin-bottom: 0; }
+    a { color: #1c6b5f; }
+    footer { text-align: center; padding: 32px 24px; font-size: 0.82rem; color: #8a8f8c; border-top: 1px solid #e3e0d8; }
+    footer a { color: #1c6b5f; text-decoration: none; }
+    @media (max-width: 600px) { section { padding: 20px 18px; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">Isaiyo</div>
+  <p>Offline music player for Android</p>
+</header>
+<main>
+  <h1>Delete Your Data</h1>
+  <p class="subtitle">Isaiyo stores everything locally on your device. You can delete it at any time, and your music files are never touched.</p>
+  <div class="highlight-box">✅ Isaiyo never uploads your data to any server. Deletion happens instantly and permanently on your device — no request to us is needed.</div>
+
+  <section>
+    <h2>Method 1 — Delete everything (uninstall the app)</h2>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Open your Android Settings</strong><span>Go to Settings → Apps → Isaiyo</span></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Tap "Uninstall"</strong><span>The library index, playlists, favourites, listening history, queue and settings are permanently deleted</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Done</strong><span>Your songs stay exactly where they were — Isaiyo only read them. Nothing remains on any server, because nothing was ever sent to one.</span></div></div>
+  </section>
+
+  <section>
+    <h2>Method 2 — Clear storage (keep the app installed)</h2>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Open your Android Settings</strong><span>Go to Settings → Apps → Isaiyo → Storage &amp; cache</span></div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Tap "Clear storage"</strong><span>Removes the index, playlists, favourites, history, queue and settings; the app returns to its first-launch screen</span></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Optional: "Clear cache"</strong><span>Removes cached artwork thumbnails and any temporary audio from Isaiyo Together</span></div></div>
+  </section>
+
+  <section>
+    <h2>Method 3 — Delete individual items in the app</h2>
+    <table>
+      <tr><th>Item</th><th>Where</th><th>Effect</th></tr>
+      <tr><td>A playlist</td><td>Playlists → the playlist → ⋮ → Delete</td><td>Removed immediately; songs stay in your library</td></tr>
+      <tr><td>A favourite</td><td>Tap the heart in Now Playing or the song's menu</td><td>Removed from Favourites</td></tr>
+      <tr><td>The queue</td><td>Now Playing → Up next → Clear</td><td>Queue and resume position cleared</td></tr>
+      <tr><td>Recent searches</td><td>Search → ✕ next to a recent search</td><td>That search is forgotten</td></tr>
+      <tr><td>Library index</td><td>Settings → Library → Rescan</td><td>Rebuilt from the files currently on the device; removed files disappear</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>What about my music files?</h2>
+    <p>Isaiyo never modifies, moves or deletes your audio files. Deleting data in Isaiyo removes only Isaiyo's own records. To remove a song from your phone, delete the file with a file manager or the app you used to add it.</p>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <p>Email <a href="mailto:r.hariskumar3@gmail.com">r.hariskumar3@gmail.com</a>. See also the <a href="index.html">Privacy Policy</a>.</p>
+  </section>
+</main>
+<footer>
+  <p>© 2026 Isaiyo · <a href="index.html">Privacy Policy</a> · <a href="mailto:r.hariskumar3@gmail.com">Contact</a></p>
+</footer>
+</body>
+</html>
